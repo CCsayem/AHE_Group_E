@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Oct 30 09:01:57 2025
+# Process ID         : 13628
+# Current directory  : F:/Advance Hardware Eng/Lab_4/Design_MicroBlaze_ilmb_v10_0_synth_1
+# Command line       : vivado.exe -log Design_MicroBlaze_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Design_MicroBlaze_ilmb_v10_0.tcl
+# Log file           : F:/Advance Hardware Eng/Lab_4/Design_MicroBlaze_ilmb_v10_0_synth_1/Design_MicroBlaze_ilmb_v10_0.vds
+# Journal file       : F:/Advance Hardware Eng/Lab_4/Design_MicroBlaze_ilmb_v10_0_synth_1\vivado.jou
+# Running On         : RUHUL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+# CPU Frequency      : 2803 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8344 MB
+# Swap memory        : 15927 MB
+# Total Virtual      : 24271 MB
+# Available Virtual  : 7377 MB
+#-----------------------------------------------------------
+source Design_MicroBlaze_ilmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 493.059 ; gain = 212.367
+Command: synth_design -top Design_MicroBlaze_ilmb_v10_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8284
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:01:11 . Memory (MB): peak = 1201.418 ; gain = 493.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Design_MicroBlaze_ilmb_v10_0' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ip/Design_MicroBlaze_ilmb_v10_0/synth/Design_MicroBlaze_ilmb_v10_0.vhd:89]
+	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_v10' declared at 'f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/b1c4/hdl/lmb_v10_v3_0_vh_rfs.vhd:91' bound to instance 'U0' of component 'lmb_v10' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ip/Design_MicroBlaze_ilmb_v10_0/synth/Design_MicroBlaze_ilmb_v10_0.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/b1c4/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-3491] module 'FDS' declared at 'D:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44354' bound to instance 'POR_FF_I' of component 'FDS' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/b1c4/hdl/lmb_v10_v3_0_vh_rfs.vhd:170]
+INFO: [Synth 8-6157] synthesizing module 'FDS' [D:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44354]
+INFO: [Synth 8-6155] done synthesizing module 'FDS' (0#1) [D:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44354]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/b1c4/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'Design_MicroBlaze_ilmb_v10_0' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ip/Design_MicroBlaze_ilmb_v10_0/synth/Design_MicroBlaze_ilmb_v10_0.vhd:89]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:01:22 . Memory (MB): peak = 1310.848 ; gain = 603.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:01:22 . Memory (MB): peak = 1310.848 ; gain = 603.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:01:22 . Memory (MB): peak = 1310.848 ; gain = 603.355
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1310.848 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ip/Design_MicroBlaze_ilmb_v10_0/Design_MicroBlaze_ilmb_v10_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ip/Design_MicroBlaze_ilmb_v10_0/Design_MicroBlaze_ilmb_v10_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [F:/Advance Hardware Eng/Lab_4/Design_MicroBlaze_ilmb_v10_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/Advance Hardware Eng/Lab_4/Design_MicroBlaze_ilmb_v10_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1312.660 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  FDS => FDSE: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1312.660 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off

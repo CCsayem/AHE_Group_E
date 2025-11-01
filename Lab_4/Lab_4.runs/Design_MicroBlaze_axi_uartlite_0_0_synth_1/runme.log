@@ -1,0 +1,117 @@
+
+*** Running vivado
+    with args -log Design_MicroBlaze_axi_uartlite_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Design_MicroBlaze_axi_uartlite_0_0.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Thu Oct 30 09:04:09 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Design_MicroBlaze_axi_uartlite_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:40 . Memory (MB): peak = 491.992 ; gain = 210.395
+Command: synth_design -top Design_MicroBlaze_axi_uartlite_0_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23256
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:59 . Memory (MB): peak = 1199.348 ; gain = 493.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Design_MicroBlaze_axi_uartlite_0_0' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ip/Design_MicroBlaze_axi_uartlite_0_0/synth/Design_MicroBlaze_axi_uartlite_0_0.vhd:86]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_BAUDRATE bound to: 9600 - type: integer 
+	Parameter C_DATA_BITS bound to: 8 - type: integer 
+	Parameter C_USE_PARITY bound to: 0 - type: integer 
+	Parameter C_ODD_PARITY bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_uartlite' declared at 'f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1951' bound to instance 'U0' of component 'axi_uartlite' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ip/Design_MicroBlaze_axi_uartlite_0_0/synth/Design_MicroBlaze_axi_uartlite_0_0.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'axi_uartlite' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2013]
+INFO: [Synth 8-638] synthesizing module 'uartlite_core' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1479]
+INFO: [Synth 8-638] synthesizing module 'baudrate' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1288]
+INFO: [Synth 8-256] done synthesizing module 'baudrate' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1288]
+INFO: [Synth 8-638] synthesizing module 'uartlite_rx' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:794]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'INPUT_DOUBLE_REGS3' of component 'xpm_cdc_single' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:854]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_rx' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:794]
+INFO: [Synth 8-638] synthesizing module 'uartlite_tx' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:306]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_tx' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:306]
+INFO: [Synth 8-256] done synthesizing module 'uartlite_core' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1479]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_uartlite' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/eab1/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2013]
+INFO: [Synth 8-256] done synthesizing module 'Design_MicroBlaze_axi_uartlite_0_0' (0#1) [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ip/Design_MicroBlaze_axi_uartlite_0_0/synth/Design_MicroBlaze_axi_uartlite_0_0.vhd:86]
+WARNING: [Synth 8-6014] Unused sequential element is_read_reg was removed.  [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2447]
+WARNING: [Synth 8-6014] Unused sequential element is_write_reg was removed.  [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2448]
+WARNING: [Synth 8-7129] Port Address_In_Erly[2] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[3] in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus_RNW in module address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[3] in module slave_attachment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[2] in module slave_attachment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[1] in module slave_attachment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[0] in module slave_attachment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_cs in module uartlite_core is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:01:07 . Memory (MB): peak = 1316.688 ; gain = 610.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:01:08 . Memory (MB): peak = 1316.688 ; gain = 610.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:01:08 . Memory (MB): peak = 1316.688 ; gain = 610.465
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1316.688 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ip/Design_MicroBlaze_axi_uartlite_0_0/Design_MicroBlaze_axi_uartlite_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ip/Design_MicroBlaze_axi_uartlite_0_0/Design_MicroBlaze_axi_uartlite_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ip/Design_MicroBlaze_axi_uartlite_0_0/Design_MicroBlaze_axi_uartlite_0_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [f:/Advance Hardware Eng/Lab_4/Design_MicroBlaze/ip/Design_MicroBlaze_axi_uartlite_0_0/Design_MicroBlaze_axi_uartlite_0_0_board.xdc] for cell 'U0'
+Parsing XDC File [F:/Advance Hardware Eng/Lab_4/Lab_4.runs/Design_MicroBlaze_axi_uartlite_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/Advance Hardware Eng/Lab_4/Lab_4.runs/Design_MicroBlaze_axi_uartlite_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Design_MicroBlaze_axi_uartlite_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Design_MicroBlaze_axi_uartlite_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1389.746 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.218 . Memory (MB): peak = 1389.746 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
