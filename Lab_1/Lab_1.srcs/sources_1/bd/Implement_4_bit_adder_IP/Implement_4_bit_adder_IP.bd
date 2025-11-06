@@ -1,0 +1,64 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x80D4400680D44006",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../Lab_1.gen/sources_1/bd/Implement_4_bit_adder_IP",
+      "name": "Implement_4_bit_adder_IP",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "four_bit_Adder_wrapp_0": ""
+    },
+    "ports": {
+      "Ax_0": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "Bx_0": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "dout_0_0": {
+        "direction": "O",
+        "left": "4",
+        "right": "0"
+      }
+    },
+    "components": {
+      "four_bit_Adder_wrapp_0": {
+        "vlnv": "xilinx.com:user:four_bit_Adder_wrapper:1.0",
+        "ip_revision": "2",
+        "xci_name": "Implement_4_bit_adder_IP_four_bit_Adder_wrapp_0_1",
+        "xci_path": "ip\\Implement_4_bit_adder_IP_four_bit_Adder_wrapp_0_1\\Implement_4_bit_adder_IP_four_bit_Adder_wrapp_0_1.xci",
+        "inst_hier_path": "four_bit_Adder_wrapp_0",
+        "has_run_ip_tcl": "true"
+      }
+    },
+    "nets": {
+      "Ax_0_1": {
+        "ports": [
+          "Ax_0",
+          "four_bit_Adder_wrapp_0/Ax"
+        ]
+      },
+      "Bx_0_1": {
+        "ports": [
+          "Bx_0",
+          "four_bit_Adder_wrapp_0/Bx"
+        ]
+      },
+      "four_bit_Adder_wrapp_0_dout_0": {
+        "ports": [
+          "four_bit_Adder_wrapp_0/dout_0",
+          "dout_0_0"
+        ]
+      }
+    }
+  }
+}

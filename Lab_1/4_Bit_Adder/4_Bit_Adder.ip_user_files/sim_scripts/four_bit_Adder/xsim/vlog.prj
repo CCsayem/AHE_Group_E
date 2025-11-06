@@ -1,0 +1,17 @@
+verilog xil_defaultlib -i "D:/Vivado/2025.1/Vivado/data/rsb/busdef" \
+"../../../bd/four_bit_Adder/ip/four_bit_Adder_xlconstant_0_0/sim/four_bit_Adder_xlconstant_0_0.v" \
+"../../../bd/four_bit_Adder/ip/four_bit_Adder_xlconcat_0_0/sim/four_bit_Adder_xlconcat_0_0.v" \
+"../../../bd/four_bit_Adder/sim/four_bit_Adder.v" \
+"../../../bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_2/sim/four_bit_Adder_xlslice_0_2.v" \
+"../../../bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_3/sim/four_bit_Adder_xlslice_0_3.v" \
+"../../../bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_4/sim/four_bit_Adder_xlslice_0_4.v" \
+"../../../bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_5/sim/four_bit_Adder_xlslice_0_5.v" \
+"../../../bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_6/sim/four_bit_Adder_xlslice_0_6.v" \
+"../../../bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_7/sim/four_bit_Adder_xlslice_0_7.v" \
+"../../../bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_8/sim/four_bit_Adder_xlslice_0_8.v" \
+"../../../bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_9/sim/four_bit_Adder_xlslice_0_9.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

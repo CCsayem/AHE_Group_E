@@ -1,0 +1,43 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Vivado/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_10 -L xlconcat_v2_1_7 -L xlslice_v1_0_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Implement_4_bit_adder_IP_wrapper_behav xil_defaultlib.Implement_4_bit_adder_IP_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Full_adder [full_adder_default]
+Compiling architecture four_bit_adder_full_adder_0_0_arch of entity xil_defaultlib.four_bit_Adder_Full_adder_0_0 [four_bit_adder_full_adder_0_0_de...]
+Compiling architecture four_bit_adder_full_adder_0_1_arch of entity xil_defaultlib.four_bit_Adder_Full_adder_0_1 [four_bit_adder_full_adder_0_1_de...]
+Compiling architecture four_bit_adder_full_adder_0_2_arch of entity xil_defaultlib.four_bit_Adder_Full_adder_0_2 [four_bit_adder_full_adder_0_2_de...]
+Compiling architecture four_bit_adder_full_adder_0_3_arch of entity xil_defaultlib.four_bit_Adder_Full_adder_0_3 [four_bit_adder_full_adder_0_3_de...]
+Compiling module xlconcat_v2_1_7.xlconcat_v2_1_7_xlconcat(dout_wi...
+Compiling module xil_defaultlib.four_bit_Adder_xlconcat_0_0
+Compiling module xlconstant_v1_1_10.xlconstant_v1_1_10_xlconstant(CO...
+Compiling module xil_defaultlib.four_bit_Adder_xlconstant_0_0
+Compiling module xlslice_v1_0_5.xlslice_v1_0_5_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.four_bit_Adder_xlslice_0_2
+Compiling module xil_defaultlib.four_bit_Adder_xlslice_0_3
+Compiling module xlslice_v1_0_5.xlslice_v1_0_5_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.four_bit_Adder_xlslice_0_4
+Compiling module xil_defaultlib.four_bit_Adder_xlslice_0_5
+Compiling module xlslice_v1_0_5.xlslice_v1_0_5_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.four_bit_Adder_xlslice_0_6
+Compiling module xil_defaultlib.four_bit_Adder_xlslice_0_7
+Compiling module xlslice_v1_0_5.xlslice_v1_0_5_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.four_bit_Adder_xlslice_0_8
+Compiling module xil_defaultlib.four_bit_Adder_xlslice_0_9
+Compiling module xil_defaultlib.four_bit_Adder
+Compiling module xil_defaultlib.four_bit_Adder_wrapper
+Compiling module xil_defaultlib.Implement_4_bit_adder_IP_four_bi...
+Compiling module xil_defaultlib.Implement_4_bit_adder_IP
+Compiling module xil_defaultlib.Implement_4_bit_adder_IP_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Implement_4_bit_adder_IP_wrapper_behav

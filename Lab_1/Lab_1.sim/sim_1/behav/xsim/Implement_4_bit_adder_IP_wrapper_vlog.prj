@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "D:/Vivado/2025.1/Vivado/data/rsb/busdef" \
+"../../../../Lab_1.ip_user_files/bd/Implement_4_bit_adder_IP/sim/Implement_4_bit_adder_IP.v" \
+"../../../../Lab_1.ip_user_files/bd/Implement_4_bit_adder_IP/ip/Implement_4_bit_adder_IP_four_bit_Adder_wrapp_0_1/4_Bit_Adder.srcs/sources_1/bd/four_bit_Adder/ip/four_bit_Adder_xlconstant_0_0/sim/four_bit_Adder_xlconstant_0_0.v" \
+"../../../../Lab_1.ip_user_files/bd/Implement_4_bit_adder_IP/ip/Implement_4_bit_adder_IP_four_bit_Adder_wrapp_0_1/4_Bit_Adder.srcs/sources_1/bd/four_bit_Adder/ip/four_bit_Adder_xlconcat_0_0/sim/four_bit_Adder_xlconcat_0_0.v" \
+"../../../../Lab_1.ip_user_files/bd/Implement_4_bit_adder_IP/ip/Implement_4_bit_adder_IP_four_bit_Adder_wrapp_0_1/4_Bit_Adder.srcs/sources_1/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_2/sim/four_bit_Adder_xlslice_0_2.v" \
+"../../../../Lab_1.ip_user_files/bd/Implement_4_bit_adder_IP/ip/Implement_4_bit_adder_IP_four_bit_Adder_wrapp_0_1/4_Bit_Adder.srcs/sources_1/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_3/sim/four_bit_Adder_xlslice_0_3.v" \
+"../../../../Lab_1.ip_user_files/bd/Implement_4_bit_adder_IP/ip/Implement_4_bit_adder_IP_four_bit_Adder_wrapp_0_1/4_Bit_Adder.srcs/sources_1/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_4/sim/four_bit_Adder_xlslice_0_4.v" \
+"../../../../Lab_1.ip_user_files/bd/Implement_4_bit_adder_IP/ip/Implement_4_bit_adder_IP_four_bit_Adder_wrapp_0_1/4_Bit_Adder.srcs/sources_1/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_5/sim/four_bit_Adder_xlslice_0_5.v" \
+"../../../../Lab_1.ip_user_files/bd/Implement_4_bit_adder_IP/ip/Implement_4_bit_adder_IP_four_bit_Adder_wrapp_0_1/4_Bit_Adder.srcs/sources_1/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_6/sim/four_bit_Adder_xlslice_0_6.v" \
+"../../../../Lab_1.ip_user_files/bd/Implement_4_bit_adder_IP/ip/Implement_4_bit_adder_IP_four_bit_Adder_wrapp_0_1/4_Bit_Adder.srcs/sources_1/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_7/sim/four_bit_Adder_xlslice_0_7.v" \
+"../../../../Lab_1.ip_user_files/bd/Implement_4_bit_adder_IP/ip/Implement_4_bit_adder_IP_four_bit_Adder_wrapp_0_1/4_Bit_Adder.srcs/sources_1/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_8/sim/four_bit_Adder_xlslice_0_8.v" \
+"../../../../Lab_1.ip_user_files/bd/Implement_4_bit_adder_IP/ip/Implement_4_bit_adder_IP_four_bit_Adder_wrapp_0_1/4_Bit_Adder.srcs/sources_1/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_9/sim/four_bit_Adder_xlslice_0_9.v" \
+"../../../../Lab_1.ip_user_files/bd/Implement_4_bit_adder_IP/ipshared/b041/4_Bit_Adder.gen/sources_1/bd/four_bit_Adder/sim/four_bit_Adder.v" \
+"../../../../Lab_1.ip_user_files/bd/Implement_4_bit_adder_IP/ipshared/b041/4_Bit_Adder.gen/sources_1/bd/four_bit_Adder/hdl/four_bit_Adder_wrapper.v" \
+"../../../../Lab_1.ip_user_files/bd/Implement_4_bit_adder_IP/ip/Implement_4_bit_adder_IP_four_bit_Adder_wrapp_0_1/sim/Implement_4_bit_adder_IP_four_bit_Adder_wrapp_0_1.v" \
+"../../../../Lab_1.gen/sources_1/bd/Implement_4_bit_adder_IP/hdl/Implement_4_bit_adder_IP_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

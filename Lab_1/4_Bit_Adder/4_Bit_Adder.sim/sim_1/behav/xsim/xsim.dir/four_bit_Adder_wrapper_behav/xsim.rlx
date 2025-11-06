@@ -1,0 +1,12 @@
+
+{ 
+    crc :  3344638792131320620  , 
+    ccp_crc :  0  , 
+    cmdline : " --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_10 -L xlconcat_v2_1_7 -L xlslice_v1_0_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot four_bit_Adder_wrapper_behav xil_defaultlib.four_bit_Adder_wrapper xil_defaultlib.glbl" , 
+    buildDate : "May 22 2025" , 
+    buildTime : "00:13:55" , 
+    linkCmd : "D:\\Vivado\\2025.1\\Vivado\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/four_bit_Adder_wrapper_behav/xsimk.exe\"   \"xsim.dir/four_bit_Adder_wrapper_behav/obj/xsim_0.win64.obj\" \"xsim.dir/four_bit_Adder_wrapper_behav/obj/xsim_1.win64.obj\" -L\"D:\\Vivado\\2025.1\\Vivado\\lib\\win64.o\" -lxv_simulator_kernel   -lxv_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

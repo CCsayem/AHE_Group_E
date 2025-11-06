@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "J:/Vivado/4_Bit_Adder/4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlconstant_0_0/sim/four_bit_Adder_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_Adder_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "J:/Vivado/4_Bit_Adder/4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlconcat_0_0/sim/four_bit_Adder_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_Adder_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "J:/Vivado/4_Bit_Adder/4_Bit_Adder.ip_user_files/bd/four_bit_Adder/sim/four_bit_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "J:/Vivado/4_Bit_Adder/4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_2/sim/four_bit_Adder_xlslice_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_Adder_xlslice_0_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "J:/Vivado/4_Bit_Adder/4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_3/sim/four_bit_Adder_xlslice_0_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_Adder_xlslice_0_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "J:/Vivado/4_Bit_Adder/4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_4/sim/four_bit_Adder_xlslice_0_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_Adder_xlslice_0_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "J:/Vivado/4_Bit_Adder/4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_5/sim/four_bit_Adder_xlslice_0_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_Adder_xlslice_0_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "J:/Vivado/4_Bit_Adder/4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_6/sim/four_bit_Adder_xlslice_0_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_Adder_xlslice_0_6
+INFO: [VRFC 10-2263] Analyzing Verilog file "J:/Vivado/4_Bit_Adder/4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_7/sim/four_bit_Adder_xlslice_0_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_Adder_xlslice_0_7
+INFO: [VRFC 10-2263] Analyzing Verilog file "J:/Vivado/4_Bit_Adder/4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_8/sim/four_bit_Adder_xlslice_0_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_Adder_xlslice_0_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "J:/Vivado/4_Bit_Adder/4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_9/sim/four_bit_Adder_xlslice_0_9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_Adder_xlslice_0_9
+INFO: [VRFC 10-2263] Analyzing Verilog file "J:/Vivado/4_Bit_Adder/4_Bit_Adder.gen/sources_1/bd/four_bit_Adder/hdl/four_bit_Adder_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_Adder_wrapper

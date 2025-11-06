@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "D:/Vivado/2025.1/Vivado/data/rsb/busdef" \
+"../../../../4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlconstant_0_0/sim/four_bit_Adder_xlconstant_0_0.v" \
+"../../../../4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlconcat_0_0/sim/four_bit_Adder_xlconcat_0_0.v" \
+"../../../../4_Bit_Adder.ip_user_files/bd/four_bit_Adder/sim/four_bit_Adder.v" \
+"../../../../4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_2/sim/four_bit_Adder_xlslice_0_2.v" \
+"../../../../4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_3/sim/four_bit_Adder_xlslice_0_3.v" \
+"../../../../4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_4/sim/four_bit_Adder_xlslice_0_4.v" \
+"../../../../4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_5/sim/four_bit_Adder_xlslice_0_5.v" \
+"../../../../4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_6/sim/four_bit_Adder_xlslice_0_6.v" \
+"../../../../4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_7/sim/four_bit_Adder_xlslice_0_7.v" \
+"../../../../4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_8/sim/four_bit_Adder_xlslice_0_8.v" \
+"../../../../4_Bit_Adder.ip_user_files/bd/four_bit_Adder/ip/four_bit_Adder_xlslice_0_9/sim/four_bit_Adder_xlslice_0_9.v" \
+"../../../../4_Bit_Adder.gen/sources_1/bd/four_bit_Adder/hdl/four_bit_Adder_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
