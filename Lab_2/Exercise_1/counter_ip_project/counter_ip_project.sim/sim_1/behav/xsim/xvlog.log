@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AHE_Final_Labs/Lab_2/Exercise_1/counter_ip_project/counter_ip_project.ip_user_files/bd/counter_circuit_4_bit/sim/counter_circuit_4_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_circuit_4_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AHE_Final_Labs/Lab_2/Exercise_1/counter_circuit_4_bit/hdl/counter_circuit_4_bit_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_circuit_4_bit_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AHE_Final_Labs/Lab_2/Exercise_1/counter_ip_project/counter_ip_project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

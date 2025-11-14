@@ -1,0 +1,10 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+F:/AHE_Final_Labs/Lab_2/Exercise_1/counter_circuit_4_bit/hdl/counter_circuit_4_bit_wrapper.v,1763131057,verilog,,,,counter_circuit_4_bit_wrapper,,,D:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+F:/AHE_Final_Labs/Lab_2/Exercise_1/counter_ip_project/counter_ip_project.ip_user_files/bd/counter_circuit_4_bit/ip/counter_circuit_4_bit_up_down_counter_4bit_0_0/sim/counter_circuit_4_bit_up_down_counter_4bit_0_0.vhd,1763131057,vhdl,,,,counter_circuit_4_bit_up_down_counter_4bit_0_0,,,,,,,,
+F:/AHE_Final_Labs/Lab_2/Exercise_1/counter_ip_project/counter_ip_project.ip_user_files/bd/counter_circuit_4_bit/ipshared/9a43/up_down_counter_4bit.vhd,1763131057,vhdl,,,,up_down_counter_4bit,,,,,,,,
+F:/AHE_Final_Labs/Lab_2/Exercise_1/counter_ip_project/counter_ip_project.ip_user_files/bd/counter_circuit_4_bit/sim/counter_circuit_4_bit.v,1763131057,verilog,,F:/AHE_Final_Labs/Lab_2/Exercise_1/counter_circuit_4_bit/hdl/counter_circuit_4_bit_wrapper.v,,counter_circuit_4_bit,,,D:/Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+F:/AHE_Final_Labs/Lab_2/Exercise_1/counter_ip_project/counter_ip_project.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+F:/AHE_Final_Labs/Lab_2/Exercise_1/counter_tb.vhd,1763133823,vhdl,,,,counter_tb,,,,,,,,

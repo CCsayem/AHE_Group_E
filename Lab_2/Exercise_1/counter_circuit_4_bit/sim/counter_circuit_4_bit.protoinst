@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"counter_circuit_4_bit": {
+			"proto_instances": {
+			}
+		}
+	}
+}

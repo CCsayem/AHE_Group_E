@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/AHE_Final_Labs/Lab_2/Exercise_1/counter_ip_project/counter_ip_project.ip_user_files/bd/counter_circuit_4_bit/ipshared/9a43/up_down_counter_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'up_down_counter_4bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/AHE_Final_Labs/Lab_2/Exercise_1/counter_ip_project/counter_ip_project.ip_user_files/bd/counter_circuit_4_bit/ip/counter_circuit_4_bit_up_down_counter_4bit_0_0/sim/counter_circuit_4_bit_up_down_counter_4bit_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_circuit_4_bit_up_down_counter_4bit_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/AHE_Final_Labs/Lab_2/Exercise_1/counter_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter_tb'

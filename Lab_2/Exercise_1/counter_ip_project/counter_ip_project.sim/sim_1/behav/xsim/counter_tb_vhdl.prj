@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../counter_ip_project.ip_user_files/bd/counter_circuit_4_bit/ipshared/9a43/up_down_counter_4bit.vhd" \
+"../../../../counter_ip_project.ip_user_files/bd/counter_circuit_4_bit/ip/counter_circuit_4_bit_up_down_counter_4bit_0_0/sim/counter_circuit_4_bit_up_down_counter_4bit_0_0.vhd" \
+"../../../../../counter_tb.vhd" \
+
+# Do not sort compile order
+nosort
