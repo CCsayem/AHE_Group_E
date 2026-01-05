@@ -1,0 +1,344 @@
+
+*** Running vivado
+    with args -log esp32_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source esp32_wrapper.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Sun Jan  4 02:29:22 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source esp32_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 528.410 ; gain = 247.887
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design F:/esp32/esp32/esp32.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ esp32_reset_inv_0_0
+Command: read_checkpoint -auto_incremental -incremental F:/esp32/esp32.srcs/utils_1/imports/synth_1/esp32_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from F:/esp32/esp32.srcs/utils_1/imports/synth_1/esp32_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top esp32_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19316
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1306.562 ; gain = 494.688
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'esp32_wrapper' [F:/esp32/esp32/hdl/esp32_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81434]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [D:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:81434]
+INFO: [Synth 8-6157] synthesizing module 'esp32' [F:/esp32/esp32/synth/esp32.v:13]
+INFO: [Synth 8-6157] synthesizing module 'esp32_PmodESP32_0_1' [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_PmodESP32_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_PmodESP32_0_1' (0#1) [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_PmodESP32_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'gpio_interrupt' of module 'esp32_PmodESP32_0_1' is unconnected for instance 'PmodESP32_0' [F:/esp32/esp32/synth/esp32.v:225]
+WARNING: [Synth 8-7071] port 'uart_interrupt' of module 'esp32_PmodESP32_0_1' is unconnected for instance 'PmodESP32_0' [F:/esp32/esp32/synth/esp32.v:225]
+WARNING: [Synth 8-7023] instance 'PmodESP32_0' of module 'esp32_PmodESP32_0_1' has 62 connections declared, but only 60 given [F:/esp32/esp32/synth/esp32.v:225]
+INFO: [Synth 8-6157] synthesizing module 'esp32_axi_intc_0_0' [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_axi_intc_0_0' (0#1) [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'esp32_axi_smc_0' [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_axi_smc_0' (0#1) [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_axi_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'esp32_axi_smc_0' is unconnected for instance 'axi_smc' [F:/esp32/esp32/synth/esp32.v:308]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'esp32_axi_smc_0' is unconnected for instance 'axi_smc' [F:/esp32/esp32/synth/esp32.v:308]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'esp32_axi_smc_0' is unconnected for instance 'axi_smc' [F:/esp32/esp32/synth/esp32.v:308]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'esp32_axi_smc_0' is unconnected for instance 'axi_smc' [F:/esp32/esp32/synth/esp32.v:308]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'esp32_axi_smc_0' is unconnected for instance 'axi_smc' [F:/esp32/esp32/synth/esp32.v:308]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'esp32_axi_smc_0' is unconnected for instance 'axi_smc' [F:/esp32/esp32/synth/esp32.v:308]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'esp32_axi_smc_0' is unconnected for instance 'axi_smc' [F:/esp32/esp32/synth/esp32.v:308]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'esp32_axi_smc_0' is unconnected for instance 'axi_smc' [F:/esp32/esp32/synth/esp32.v:308]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'esp32_axi_smc_0' has 97 connections declared, but only 89 given [F:/esp32/esp32/synth/esp32.v:308]
+INFO: [Synth 8-6157] synthesizing module 'esp32_axi_uartlite_1_0' [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_axi_uartlite_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_axi_uartlite_1_0' (0#1) [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_axi_uartlite_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'esp32_clk_wiz_1_0' [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_clk_wiz_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_clk_wiz_1_0' (0#1) [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_clk_wiz_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'esp32_mdm_1_0' [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_mdm_1_0' (0#1) [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'esp32_microblaze_0_0' [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_microblaze_0_0' (0#1) [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'esp32_microblaze_0_0' is unconnected for instance 'microblaze_0' [F:/esp32/esp32/synth/esp32.v:439]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'esp32_microblaze_0_0' has 52 connections declared, but only 51 given [F:/esp32/esp32/synth/esp32.v:439]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_12VOU0S' [F:/esp32/esp32/synth/esp32.v:527]
+INFO: [Synth 8-6157] synthesizing module 'esp32_dlmb_bram_if_cntlr_0' [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_dlmb_bram_if_cntlr_0' (0#1) [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'esp32_dlmb_v10_0' [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_dlmb_v10_0' (0#1) [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'esp32_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [F:/esp32/esp32/synth/esp32.v:652]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'esp32_dlmb_v10_0' has 25 connections declared, but only 24 given [F:/esp32/esp32/synth/esp32.v:652]
+INFO: [Synth 8-6157] synthesizing module 'esp32_ilmb_bram_if_cntlr_0' [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_ilmb_bram_if_cntlr_0' (0#1) [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'esp32_ilmb_v10_0' [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_ilmb_v10_0' (0#1) [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'esp32_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [F:/esp32/esp32/synth/esp32.v:698]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'esp32_ilmb_v10_0' has 25 connections declared, but only 24 given [F:/esp32/esp32/synth/esp32.v:698]
+INFO: [Synth 8-6157] synthesizing module 'esp32_lmb_bram_0' [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_lmb_bram_0' (0#1) [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'esp32_lmb_bram_0' is unconnected for instance 'lmb_bram' [F:/esp32/esp32/synth/esp32.v:723]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'esp32_lmb_bram_0' is unconnected for instance 'lmb_bram' [F:/esp32/esp32/synth/esp32.v:723]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'esp32_lmb_bram_0' has 16 connections declared, but only 14 given [F:/esp32/esp32/synth/esp32.v:723]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_12VOU0S' (0#1) [F:/esp32/esp32/synth/esp32.v:527]
+INFO: [Synth 8-6157] synthesizing module 'esp32_reset_inv_0_0' [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_reset_inv_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_reset_inv_0_0' (0#1) [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_reset_inv_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'esp32_rst_clk_wiz_1_100M_0' [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_rst_clk_wiz_1_100M_0' (0#1) [F:/esp32/esp32.runs/synth_1/.Xil/Vivado-29012-RUHUL/realtime/esp32_rst_clk_wiz_1_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'esp32_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [F:/esp32/esp32/synth/esp32.v:516]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'esp32_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [F:/esp32/esp32/synth/esp32.v:516]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'esp32_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [F:/esp32/esp32/synth/esp32.v:516]
+INFO: [Synth 8-6155] done synthesizing module 'esp32' (0#1) [F:/esp32/esp32/synth/esp32.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_wrapper' (0#1) [F:/esp32/esp32/hdl/esp32_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1422.152 ; gain = 610.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1422.152 ; gain = 610.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1422.152 ; gain = 610.277
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1422.152 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/esp32/esp32/ip/esp32_microblaze_0_0/esp32_microblaze_0_0/esp32_microblaze_0_0_in_context.xdc] for cell 'esp32_i/microblaze_0'
+Finished Parsing XDC File [f:/esp32/esp32/ip/esp32_microblaze_0_0/esp32_microblaze_0_0/esp32_microblaze_0_0_in_context.xdc] for cell 'esp32_i/microblaze_0'
+Parsing XDC File [f:/esp32/esp32/ip/esp32_dlmb_v10_0/esp32_dlmb_v10_0/esp32_ilmb_v10_0_in_context.xdc] for cell 'esp32_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [f:/esp32/esp32/ip/esp32_dlmb_v10_0/esp32_dlmb_v10_0/esp32_ilmb_v10_0_in_context.xdc] for cell 'esp32_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [f:/esp32/esp32/ip/esp32_ilmb_v10_0/esp32_ilmb_v10_0/esp32_ilmb_v10_0_in_context.xdc] for cell 'esp32_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [f:/esp32/esp32/ip/esp32_ilmb_v10_0/esp32_ilmb_v10_0/esp32_ilmb_v10_0_in_context.xdc] for cell 'esp32_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [f:/esp32/esp32/ip/esp32_dlmb_bram_if_cntlr_0/esp32_dlmb_bram_if_cntlr_0/esp32_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'esp32_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [f:/esp32/esp32/ip/esp32_dlmb_bram_if_cntlr_0/esp32_dlmb_bram_if_cntlr_0/esp32_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'esp32_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [f:/esp32/esp32/ip/esp32_ilmb_bram_if_cntlr_0/esp32_ilmb_bram_if_cntlr_0/esp32_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'esp32_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [f:/esp32/esp32/ip/esp32_ilmb_bram_if_cntlr_0/esp32_ilmb_bram_if_cntlr_0/esp32_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'esp32_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [f:/esp32/esp32/ip/esp32_lmb_bram_0/esp32_lmb_bram_0/esp32_lmb_bram_0_in_context.xdc] for cell 'esp32_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [f:/esp32/esp32/ip/esp32_lmb_bram_0/esp32_lmb_bram_0/esp32_lmb_bram_0_in_context.xdc] for cell 'esp32_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [f:/esp32/esp32/ip/esp32_mdm_1_0/esp32_mdm_1_0/esp32_mdm_1_0_in_context.xdc] for cell 'esp32_i/mdm_1'
+Finished Parsing XDC File [f:/esp32/esp32/ip/esp32_mdm_1_0/esp32_mdm_1_0/esp32_mdm_1_0_in_context.xdc] for cell 'esp32_i/mdm_1'
+Parsing XDC File [f:/esp32/esp32/ip/esp32_clk_wiz_1_0/esp32_clk_wiz_1_0/esp32_clk_wiz_1_0_in_context.xdc] for cell 'esp32_i/clk_wiz_1'
+Finished Parsing XDC File [f:/esp32/esp32/ip/esp32_clk_wiz_1_0/esp32_clk_wiz_1_0/esp32_clk_wiz_1_0_in_context.xdc] for cell 'esp32_i/clk_wiz_1'
+Parsing XDC File [f:/esp32/esp32/ip/esp32_rst_clk_wiz_1_100M_0/esp32_rst_clk_wiz_1_100M_0/esp32_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'esp32_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [f:/esp32/esp32/ip/esp32_rst_clk_wiz_1_100M_0/esp32_rst_clk_wiz_1_100M_0/esp32_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'esp32_i/rst_clk_wiz_1_100M'
+Parsing XDC File [f:/esp32/esp32/ip/esp32_axi_uartlite_1_0/esp32_axi_uartlite_1_0/esp32_axi_uartlite_1_0_in_context.xdc] for cell 'esp32_i/axi_uartlite_1'
+Finished Parsing XDC File [f:/esp32/esp32/ip/esp32_axi_uartlite_1_0/esp32_axi_uartlite_1_0/esp32_axi_uartlite_1_0_in_context.xdc] for cell 'esp32_i/axi_uartlite_1'
+Parsing XDC File [f:/esp32/esp32/ip/esp32_axi_smc_0/esp32_axi_smc_0/esp32_axi_smc_0_in_context.xdc] for cell 'esp32_i/axi_smc'
+Finished Parsing XDC File [f:/esp32/esp32/ip/esp32_axi_smc_0/esp32_axi_smc_0/esp32_axi_smc_0_in_context.xdc] for cell 'esp32_i/axi_smc'
+Parsing XDC File [f:/esp32/esp32/ip/esp32_reset_inv_0_0/esp32_reset_inv_0_0/esp32_reset_inv_0_0_in_context.xdc] for cell 'esp32_i/reset_inv_0'
+Finished Parsing XDC File [f:/esp32/esp32/ip/esp32_reset_inv_0_0/esp32_reset_inv_0_0/esp32_reset_inv_0_0_in_context.xdc] for cell 'esp32_i/reset_inv_0'
+Parsing XDC File [f:/esp32/esp32/ip/esp32_axi_intc_0_0/esp32_axi_intc_0_0/esp32_axi_intc_0_0_in_context.xdc] for cell 'esp32_i/axi_intc_0'
+Finished Parsing XDC File [f:/esp32/esp32/ip/esp32_axi_intc_0_0/esp32_axi_intc_0_0/esp32_axi_intc_0_0_in_context.xdc] for cell 'esp32_i/axi_intc_0'
+Parsing XDC File [f:/esp32/esp32/ip/esp32_PmodESP32_0_1/esp32_PmodESP32_0_1/esp32_PmodESP32_0_1_in_context.xdc] for cell 'esp32_i/PmodESP32_0'
+Finished Parsing XDC File [f:/esp32/esp32/ip/esp32_PmodESP32_0_1/esp32_PmodESP32_0_1/esp32_PmodESP32_0_1_in_context.xdc] for cell 'esp32_i/PmodESP32_0'
+Parsing XDC File [F:/esp32/pins.xdc]
+Finished Parsing XDC File [F:/esp32/pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/esp32/pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/esp32_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/esp32_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [F:/esp32/esp32.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/esp32/esp32.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1478.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1478.453 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'esp32_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1478.609 ; gain = 666.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1478.609 ; gain = 666.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1478.609 ; gain = 666.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1478.609 ; gain = 666.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1478.609 ; gain = 666.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1603.031 ; gain = 791.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1603.590 ; gain = 791.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1613.938 ; gain = 802.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1848.602 ; gain = 1036.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1848.602 ; gain = 1036.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1848.602 ; gain = 1036.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1848.602 ; gain = 1036.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1848.602 ; gain = 1036.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1848.602 ; gain = 1036.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------+----------+
+|      |BlackBox name              |Instances |
++------+---------------------------+----------+
+|1     |esp32_PmodESP32_0_1        |         1|
+|2     |esp32_axi_intc_0_0         |         1|
+|3     |esp32_axi_smc_0            |         1|
+|4     |esp32_axi_uartlite_1_0     |         1|
+|5     |esp32_clk_wiz_1_0          |         1|
+|6     |esp32_mdm_1_0              |         1|
+|7     |esp32_microblaze_0_0       |         1|
+|8     |esp32_reset_inv_0_0        |         1|
+|9     |esp32_rst_clk_wiz_1_100M_0 |         1|
+|10    |esp32_dlmb_bram_if_cntlr_0 |         1|
+|11    |esp32_dlmb_v10_0           |         1|
+|12    |esp32_ilmb_bram_if_cntlr_0 |         1|
+|13    |esp32_ilmb_v10_0           |         1|
+|14    |esp32_lmb_bram_0           |         1|
++------+---------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------+------+
+|      |Cell                     |Count |
++------+-------------------------+------+
+|1     |esp32_PmodESP32_0        |     1|
+|2     |esp32_axi_intc_0         |     1|
+|3     |esp32_axi_smc            |     1|
+|4     |esp32_axi_uartlite_1     |     1|
+|5     |esp32_clk_wiz_1          |     1|
+|6     |esp32_dlmb_bram_if_cntlr |     1|
+|7     |esp32_dlmb_v10           |     1|
+|8     |esp32_ilmb_bram_if_cntlr |     1|
+|9     |esp32_ilmb_v10           |     1|
+|10    |esp32_lmb_bram           |     1|
+|11    |esp32_mdm_1              |     1|
+|12    |esp32_microblaze_0       |     1|
+|13    |esp32_reset_inv_0        |     1|
+|14    |esp32_rst_clk_wiz_1_100M |     1|
+|15    |IBUF                     |     2|
+|16    |IOBUF                    |     8|
+|17    |OBUF                     |     1|
++------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1848.602 ; gain = 1036.727
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1848.602 ; gain = 980.270
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1848.602 ; gain = 1036.727
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1848.602 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1855.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+
+Synth Design complete | Checksum: d3aaedb0
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1855.832 ; gain = 1247.504
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1855.832 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/esp32/esp32.runs/synth_1/esp32_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file esp32_wrapper_utilization_synth.rpt -pb esp32_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan  4 02:30:08 2026...

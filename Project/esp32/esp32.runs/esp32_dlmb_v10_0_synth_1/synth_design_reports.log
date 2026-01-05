@@ -1,0 +1,33 @@
+
+*** Running vivado
+    with args  -m64 -nolog -nojournal -notrace -mode batch -product Vivado -source esp32_dlmb_v10_0_reports.tcl -tclargs synth_design
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Mon Jan  5 00:31:05 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source esp32_dlmb_v10_0_reports.tcl -notrace
+Command: open_checkpoint esp32_dlmb_v10_0.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 295.574 ; gain = 3.797
+WARNING: [Vivado 12-8410] Design file 'F:/esp32/esp32.runs/esp32_dlmb_v10_0_synth_1/esp32_dlmb_v10_0.dcp' has failed integrity check (1). There is either a missing chekcsum or mismatch. Please regenerate the DCP file.
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 741.738 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2025.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 835.230 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.1 (64-bit) build 6140274
+open_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 843.445 ; gain = 562.984
+INFO: [Vivado 12-24828] Executing command : report_utilization -file esp32_dlmb_v10_0_utilization_synth.rpt -pb esp32_dlmb_v10_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  5 00:31:26 2026...
