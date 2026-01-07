@@ -1,0 +1,1078 @@
+
+*** Running vivado
+    with args -log esp32_system_PmodOLEDrgb_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source esp32_system_PmodOLEDrgb_0_0.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Tue Jan  6 12:13:25 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source esp32_system_PmodOLEDrgb_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 529.223 ; gain = 247.156
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top esp32_system_PmodOLEDrgb_0_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26964
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:38 . Memory (MB): peak = 1256.938 ; gain = 492.469
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/synth/esp32_system_PmodOLEDrgb_0_0.v:190]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/synth/esp32_system_PmodOLEDrgb_0_0.v:191]
+INFO: [Synth 8-6157] synthesizing module 'esp32_system_PmodOLEDrgb_0_0' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/synth/esp32_system_PmodOLEDrgb_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'PmodOLEDrgb_v1_0' [f:/Project AHE/esp32_system/ipshared/35e8/hdl/PmodOLEDrgb_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'PmodOLEDrgb_pmod_bridge_0_0' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/synth/PmodOLEDrgb_pmod_bridge_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'pmod_concat' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'pmod_concat' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'PmodOLEDrgb_pmod_bridge_0_0' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/synth/PmodOLEDrgb_pmod_bridge_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'PmodOLEDrgb_axi_gpio_0_1' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/synth/PmodOLEDrgb_axi_gpio_0_1.vhd:86]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 4 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:1255' bound to instance 'U0' of component 'axi_gpio' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/synth/PmodOLEDrgb_axi_gpio_0_1.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:1341]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized0' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized0' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized1' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized1' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized2' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized2' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:182]
+INFO: [Synth 8-226] default block is never used [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:447]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_array_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903' bound to instance 'INPUT_DOUBLE_REGS3' of component 'xpm_cdc_array_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:458]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:1341]
+INFO: [Synth 8-256] done synthesizing module 'PmodOLEDrgb_axi_gpio_0_1' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/synth/PmodOLEDrgb_axi_gpio_0_1.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'PmodOLEDrgb_axi_quad_spi_0_0' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/synth/PmodOLEDrgb_axi_quad_spi_0_0.vhd:97]
+	Parameter Async_Clk bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_SUB_FAMILY bound to: zynq - type: string 
+	Parameter C_INSTANCE bound to: axi_quad_spi_inst - type: string 
+	Parameter C_SPI_MEM_ADDR_BITS bound to: 24 - type: integer 
+	Parameter C_TYPE_OF_AXI4_INTERFACE bound to: 0 - type: integer 
+	Parameter C_XIP_MODE bound to: 0 - type: integer 
+	Parameter C_XIP_PERF_MODE bound to: 1 - type: integer 
+	Parameter C_BYTE_LEVEL_INTERRUPT_EN bound to: 0 - type: integer 
+	Parameter C_UC_FAMILY bound to: 0 - type: integer 
+	Parameter C_FIFO_DEPTH bound to: 16 - type: integer 
+	Parameter C_SCK_RATIO bound to: 16 - type: integer 
+	Parameter C_DUAL_QUAD_MODE bound to: 0 - type: integer 
+	Parameter C_NUM_SS_BITS bound to: 1 - type: integer 
+	Parameter C_NUM_TRANSFER_BITS bound to: 8 - type: integer 
+	Parameter C_NEW_SEQ_EN bound to: 1 - type: integer 
+	Parameter C_SPI_MODE bound to: 0 - type: integer 
+	Parameter C_USE_STARTUP bound to: 0 - type: integer 
+	Parameter C_USE_STARTUP_EXT bound to: 0 - type: integer 
+	Parameter C_SPI_MEMORY bound to: 1 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI4_ADDR_WIDTH bound to: 24 - type: integer 
+	Parameter C_S_AXI4_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI4_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_SHARED_STARTUP bound to: 0 - type: integer 
+	Parameter C_S_AXI4_BASEADDR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_S_AXI4_HIGHADDR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_LSB_STUP bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_quad_spi' declared at 'f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35743' bound to instance 'U0' of component 'axi_quad_spi' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/synth/PmodOLEDrgb_axi_quad_spi_0_0.vhd:297]
+INFO: [Synth 8-638] synthesizing module 'axi_quad_spi' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35983]
+INFO: [Synth 8-638] synthesizing module 'axi_quad_spi_top' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34245]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO0_I_REG' to cell 'FD' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34714]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO1_I_REG' to cell 'FD' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34725]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO2_I_REG' to cell 'FD' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO3_I_REG' to cell 'FD' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34748]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif__parameterized0' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment__parameterized0' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder__parameterized0' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized3' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized3' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized4' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized4' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized5' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized5' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized6' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized6' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized7' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized7' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized8' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized8' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized9' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized9' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized10' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized10' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized11' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized11' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized12' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized12' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized13' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized13' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized14' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized14' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized15' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized15' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized16' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized16' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized17' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized17' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized18' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized18' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized19' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized19' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized20' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized20' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized21' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized21' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized22' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized22' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized23' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized23' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized24' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized24' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized25' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized25' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized26' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized26' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized27' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized27' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized28' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized28' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized29' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized29' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder__parameterized0' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment__parameterized0' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif__parameterized0' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'qspi_core_interface' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:18622]
+INFO: [Synth 8-638] synthesizing module 'reset_sync_module' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:2268]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RESET_SYNC_AX2S_1' to cell 'FDR' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:2297]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RESET_SYNC_AX2S_2' to cell 'FDR' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:2305]
+INFO: [Synth 8-256] done synthesizing module 'reset_sync_module' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:2268]
+INFO: [Synth 8-638] synthesizing module 'cross_clk_sync_fifo_1' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:14709]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'CMD_ERR_S2AX_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15699]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SPISEL_D1_REG_S2AX_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15715]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPISEL_PULSE_S2AX_1_CDC' to cell 'FDR' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15744]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPISEL_PULSE_S2AX_2' to cell 'FDR' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15752]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPISEL_PULSE_S2AX_3' to cell 'FDR' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15760]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPISEL_PULSE_S2AX_4' to cell 'FDR' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15768]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'MST_N_SLV_MODE_S2AX_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15781]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SLV_MODF_STRB_S2AX_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15809]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'MODF_STROBE_S2AX_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15849]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'RX_FIFO_EMPTY_AX2S_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15876]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized2' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized2' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'TX_FIFO_EMPTY_S2AX_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15892]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'TX_EMPT_4_SPISR_S2AX_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15907]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'TX_FIFO_FULL_AX2S_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15923]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SPIXFER_DONE_S2AX_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15939]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'RX_FIFO_FULL_S2AX_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15953]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SYNC_SPIXFER_DONE_S2AX_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15982]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'DTR_UNDERRUN_S2AX_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16009]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SPICR_0_LOOP_AX2S_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16024]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SPICR_1_SPE_AX2S_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16039]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SPICR_2_MST_N_SLV_AX2S_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16055]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SPICR_3_CPOL_AX2S_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16070]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SPICR_4_CPHA_AX2S_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16085]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SPICR_5_TXFIFO_AX2S_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16100]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SPICR_6_RXFIFO_RST_AX2S_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16115]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SPICR_7_SS_AX2S_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16130]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SPICR_8_TR_INHIBIT_AX2S_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16145]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SPICR_9_LSB_AX2S_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16160]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SR_3_MODF_AX2S_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16175]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SPISSR_AX2S_1_CDC' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16195]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'DRR_OVERRUN_S2AX_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16227]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'RX_FIFO_RST_AX2S_1' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16268]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized4' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized4' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RX_FIFO_RST_AX2S_1_CDC_1' to cell 'FDR' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16283]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RX_FIFO_RST_AX2S_2' to cell 'FDR' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16291]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SPICR_BITS_7_8_AX2S_1_CDC' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16312]
+	Parameter DEST_SYNC_FF bound to: 3 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'SPICR_BITS_7_8_AX2S_1_CDC' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16312]
+INFO: [Synth 8-256] done synthesizing module 'cross_clk_sync_fifo_1' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:14709]
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1f1f - type: string 
+	Parameter READ_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_fifo_async' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173' bound to instance 'RX_FIFO_II' of component 'xpm_fifo_async' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:20389]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:522]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized1' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized1' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-226] default block is never used [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1220]
+INFO: [Synth 8-226] default block is never used [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1287]
+INFO: [Synth 8-226] default block is never used [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1309]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'RX_FIFO_EMPTY_SYNC_AXI_2_SPI_CDC' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:20441]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'RX_FIFO_FULL_SYNCED_SPI_2_AXI_CDC' of component 'xpm_cdc_single' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:20505]
+INFO: [Synth 8-638] synthesizing module 'counter_f' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:642]
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:642]
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_fifo_async' declared at 'D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173' bound to instance 'TX_FIFO_II' of component 'xpm_fifo_async' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:20704]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async__parameterized1' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-226] default block is never used [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1220]
+INFO: [Synth 8-226] default block is never used [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1287]
+INFO: [Synth 8-226] default block is never used [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1309]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async__parameterized1' (0#1) [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173]
+INFO: [Synth 8-638] synthesizing module 'qspi_fifo_ifmodule' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:13256]
+INFO: [Synth 8-256] done synthesizing module 'qspi_fifo_ifmodule' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:13256]
+INFO: [Synth 8-638] synthesizing module 'qspi_occupancy_reg' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:3461]
+INFO: [Synth 8-256] done synthesizing module 'qspi_occupancy_reg' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:3461]
+INFO: [Synth 8-638] synthesizing module 'qspi_mode_0_module' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:8592]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'MST_TRANS_INHIBIT_D1_I' to cell 'FD' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9161]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPI_TRISTATE_CONTROL_II' to cell 'FD' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9189]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPI_TRISTATE_CONTROL_III' to cell 'FD' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9201]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPI_TRISTATE_CONTROL_IV' to cell 'FD' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9213]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPI_TRISTATE_CONTROL_V' to cell 'FD' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9237]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPISEL_REG' to cell 'FD' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9316]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'SCK_I_REG' to cell 'FD' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9399]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'SCK_O_NE_4_FDRE_INST' to cell 'FDRE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:10496]
+INFO: [Synth 8-256] done synthesizing module 'qspi_mode_0_module' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:8592]
+INFO: [Synth 8-638] synthesizing module 'qspi_cntrl_reg' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:13602]
+INFO: [Synth 8-113] binding component instance 'SPI_TRISTATE_CONTROL_I' to cell 'FDRE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:13810]
+INFO: [Synth 8-113] binding component instance 'SPI_TRISTATE_CONTROL_I' to cell 'FDRE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:13810]
+INFO: [Synth 8-256] done synthesizing module 'qspi_cntrl_reg' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:13602]
+INFO: [Synth 8-638] synthesizing module 'qspi_status_slave_sel_reg' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:2494]
+INFO: [Synth 8-256] done synthesizing module 'qspi_status_slave_sel_reg' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:2494]
+INFO: [Synth 8-638] synthesizing module 'soft_reset' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:838]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'FF_WRACK' to cell 'FDRSE' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:992]
+INFO: [Synth 8-256] done synthesizing module 'soft_reset' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:838]
+INFO: [Synth 8-638] synthesizing module 'interrupt_control' [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/interrupt_control_v3_1_vh_rfs.vhd:257]
+INFO: [Synth 8-256] done synthesizing module 'interrupt_control' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/interrupt_control_v3_1_vh_rfs.vhd:257]
+INFO: [Synth 8-256] done synthesizing module 'qspi_core_interface' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:18622]
+INFO: [Synth 8-256] done synthesizing module 'axi_quad_spi_top' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34245]
+INFO: [Synth 8-256] done synthesizing module 'axi_quad_spi' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35983]
+INFO: [Synth 8-256] done synthesizing module 'PmodOLEDrgb_axi_quad_spi_0_0' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/synth/PmodOLEDrgb_axi_quad_spi_0_0.vhd:97]
+WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'PmodOLEDrgb_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [f:/Project AHE/esp32_system/ipshared/35e8/hdl/PmodOLEDrgb_v1_0.v:259]
+WARNING: [Synth 8-7023] instance 'axi_quad_spi_0' of module 'PmodOLEDrgb_axi_quad_spi_0_0' has 33 connections declared, but only 32 given [f:/Project AHE/esp32_system/ipshared/35e8/hdl/PmodOLEDrgb_v1_0.v:259]
+INFO: [Synth 8-6155] done synthesizing module 'PmodOLEDrgb_v1_0' (0#1) [f:/Project AHE/esp32_system/ipshared/35e8/hdl/PmodOLEDrgb_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'esp32_system_PmodOLEDrgb_0_0' (0#1) [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/synth/esp32_system_PmodOLEDrgb_0_0.v:53]
+WARNING: [Synth 8-3848] Net in_top_bus_I in module/entity pmod_concat does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:84]
+WARNING: [Synth 8-3848] Net in_top_uart_gpio_bus_I in module/entity pmod_concat does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:87]
+WARNING: [Synth 8-3848] Net in_top_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:90]
+WARNING: [Synth 8-3848] Net in_bottom_bus_I in module/entity pmod_concat does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:94]
+WARNING: [Synth 8-3848] Net in_bottom_uart_gpio_bus_I in module/entity pmod_concat does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:97]
+WARNING: [Synth 8-3848] Net in_bottom_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:100]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:388]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:388]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:388]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:388]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3085]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:550]
+WARNING: [Synth 8-6014] Unused sequential element gen_pf_ic_rc.gae_ic_std.ram_aempty_i_reg was removed.  [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:771]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:550]
+WARNING: [Synth 8-6014] Unused sequential element gen_pf_ic_rc.gae_ic_std.ram_aempty_i_reg was removed.  [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:771]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
+WARNING: [Synth 8-6014] Unused sequential element transfer_start_d2_reg was removed.  [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9524]
+WARNING: [Synth 8-6014] Unused sequential element transfer_start_d3_reg was removed.  [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9525]
+WARNING: [Synth 8-6014] Unused sequential element SPIXfer_done_int_pulse_d3_reg was removed.  [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9582]
+WARNING: [Synth 8-6014] Unused sequential element SS_Asserted_reg was removed.  [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:10760]
+WARNING: [Synth 8-6014] Unused sequential element SS_Asserted_1dly_reg was removed.  [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:10761]
+WARNING: [Synth 8-6014] Unused sequential element MODF_strobe_int_reg was removed.  [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:10790]
+WARNING: [Synth 8-6014] Unused sequential element LEGACY_MD_WR_RD_ACK_GEN.Bus2IP_WrCE_d1_reg was removed.  [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19227]
+WARNING: [Synth 8-6014] Unused sequential element LEGACY_MD_WR_RD_ACK_GEN.Bus2IP_WrCE_d2_reg was removed.  [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19228]
+WARNING: [Synth 8-6014] Unused sequential element LEGACY_MD_WR_RD_ACK_GEN.Bus2IP_WrCE_d3_reg was removed.  [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19229]
+WARNING: [Synth 8-6014] Unused sequential element LEGACY_MD_WR_RD_ACK_GEN.ip2Bus_RdAck_core_reg_d1_reg was removed.  [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19328]
+WARNING: [Synth 8-6014] Unused sequential element LEGACY_MD_WR_RD_ACK_GEN.ip2Bus_RdAck_core_reg_1_reg was removed.  [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19330]
+WARNING: [Synth 8-3848] Net cfgclk in module/entity qspi_core_interface does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:18599]
+WARNING: [Synth 8-3848] Net cfgmclk in module/entity qspi_core_interface does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:18600]
+WARNING: [Synth 8-3848] Net eos in module/entity qspi_core_interface does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:18601]
+WARNING: [Synth 8-3848] Net preq in module/entity qspi_core_interface does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:18602]
+WARNING: [Synth 8-3848] Net di in module/entity qspi_core_interface does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:18603]
+WARNING: [Synth 8-3848] Net s_axi4_awready in module/entity axi_quad_spi_top does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34136]
+WARNING: [Synth 8-3848] Net s_axi4_wready in module/entity axi_quad_spi_top does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34144]
+WARNING: [Synth 8-3848] Net s_axi4_bid in module/entity axi_quad_spi_top does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34148]
+WARNING: [Synth 8-3848] Net s_axi4_bresp in module/entity axi_quad_spi_top does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34149]
+WARNING: [Synth 8-3848] Net s_axi4_bvalid in module/entity axi_quad_spi_top does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34150]
+WARNING: [Synth 8-3848] Net s_axi4_arready in module/entity axi_quad_spi_top does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34164]
+WARNING: [Synth 8-3848] Net s_axi4_rid in module/entity axi_quad_spi_top does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34168]
+WARNING: [Synth 8-3848] Net s_axi4_rdata in module/entity axi_quad_spi_top does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34169]
+WARNING: [Synth 8-3848] Net s_axi4_rresp in module/entity axi_quad_spi_top does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34170]
+WARNING: [Synth 8-3848] Net s_axi4_rlast in module/entity axi_quad_spi_top does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34171]
+WARNING: [Synth 8-3848] Net s_axi4_rvalid in module/entity axi_quad_spi_top does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34172]
+WARNING: [Synth 8-3848] Net io0_1_o in module/entity axi_quad_spi does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35926]
+WARNING: [Synth 8-3848] Net io0_1_t in module/entity axi_quad_spi does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35927]
+WARNING: [Synth 8-3848] Net io1_1_o in module/entity axi_quad_spi does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35930]
+WARNING: [Synth 8-3848] Net io1_1_t in module/entity axi_quad_spi does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35931]
+WARNING: [Synth 8-3848] Net io2_1_o in module/entity axi_quad_spi does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35936]
+WARNING: [Synth 8-3848] Net io2_1_t in module/entity axi_quad_spi does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35937]
+WARNING: [Synth 8-3848] Net io3_1_o in module/entity axi_quad_spi does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35940]
+WARNING: [Synth 8-3848] Net io3_1_t in module/entity axi_quad_spi does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35941]
+WARNING: [Synth 8-3848] Net ss_1_o in module/entity axi_quad_spi does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35956]
+WARNING: [Synth 8-3848] Net ss_1_t in module/entity axi_quad_spi does not have driver. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35957]
+WARNING: [Synth 8-7129] Port bus2ip_data[1] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[2] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[3] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[4] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[5] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[6] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[7] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[8] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[9] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[10] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[11] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[12] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[13] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[14] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[15] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[16] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[17] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_be[1] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_be[2] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_be[3] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[0] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[1] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[2] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[3] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[4] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[5] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[6] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[9] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[11] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[12] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[13] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[14] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[15] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[0] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[1] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[2] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[3] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[4] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[5] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[6] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[9] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[11] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[12] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[13] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[14] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[15] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ipif_reg_interrupts[0] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ipif_reg_interrupts[1] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ipif_lvl_interrupts[0] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[0] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[1] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[2] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[3] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[4] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[5] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[6] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[7] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[8] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[9] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[10] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[11] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[12] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[13] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[14] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[15] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[16] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[17] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[18] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[19] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[20] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[21] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[22] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[23] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[24] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[25] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[26] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[27] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[0] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[1] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[2] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[0] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[1] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[2] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[3] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[4] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[5] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[6] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[7] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[8] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[9] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[10] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[11] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[12] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[13] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[14] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[15] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[16] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[17] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[18] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[19] in module qspi_status_slave_sel_reg is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:01:23 . Memory (MB): peak = 1415.059 ; gain = 650.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:01:23 . Memory (MB): peak = 1415.059 ; gain = 650.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:01:23 . Memory (MB): peak = 1415.059 ; gain = 650.590
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1415.059 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/PmodOLEDrgb_pmod_bridge_0_0_board.xdc] for cell 'inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/PmodOLEDrgb_pmod_bridge_0_0_board.xdc] for cell 'inst/pmod_bridge_0/inst'
+Parsing XDC File [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/PmodOLEDrgb_axi_gpio_0_1_board.xdc] for cell 'inst/axi_gpio_0/U0'
+Finished Parsing XDC File [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/PmodOLEDrgb_axi_gpio_0_1_board.xdc] for cell 'inst/axi_gpio_0/U0'
+Parsing XDC File [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_board.xdc] for cell 'inst/axi_quad_spi_0/U0'
+Finished Parsing XDC File [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_board.xdc] for cell 'inst/axi_quad_spi_0/U0'
+Parsing XDC File [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0.xdc] for cell 'inst/axi_quad_spi_0/U0'
+Finished Parsing XDC File [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0.xdc] for cell 'inst/axi_quad_spi_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/esp32_system_PmodOLEDrgb_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/esp32_system_PmodOLEDrgb_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/esp32_system_PmodOLEDrgb_0_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/esp32_system_PmodOLEDrgb_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [F:/esp32/esp32.runs/esp32_system_PmodOLEDrgb_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/esp32/esp32.runs/esp32_system_PmodOLEDrgb_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/esp32/esp32.runs/esp32_system_PmodOLEDrgb_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/esp32_system_PmodOLEDrgb_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/esp32_system_PmodOLEDrgb_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_clocks.xdc] for cell 'inst/axi_quad_spi_0/U0'
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports s_axi_aclk2]'. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_clocks.xdc:50]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_clocks.xdc:50]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports ext_spi_clk]'. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_clocks.xdc:51]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_clocks.xdc:51]
+Finished Parsing XDC File [f:/Project AHE/esp32_system/ip/esp32_system_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_clocks.xdc] for cell 'inst/axi_quad_spi_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/esp32_system_PmodOLEDrgb_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/esp32_system_PmodOLEDrgb_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/esp32_system_PmodOLEDrgb_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/esp32_system_PmodOLEDrgb_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/esp32_system_PmodOLEDrgb_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/esp32_system_PmodOLEDrgb_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/esp32_system_PmodOLEDrgb_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/esp32_system_PmodOLEDrgb_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 46 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1513.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  FD => FDRE: 11 instances
+  FDR => FDRE: 8 instances
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 17 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1513.715 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:01:46 . Memory (MB): peak = 1513.715 ; gain = 749.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:01:46 . Memory (MB): peak = 1513.715 ; gain = 749.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:01:46 . Memory (MB): peak = 1513.715 ; gain = 749.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment__parameterized0'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst__xdcDup__1'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:01:51 . Memory (MB): peak = 1513.715 ; gain = 749.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
+	   4 Input    5 Bit       Adders := 6     
+	   2 Input    5 Bit       Adders := 5     
+	   3 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 3     
+	   4 Input    4 Bit       Adders := 10    
+	   3 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
+	   4 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      5 Bit         XORs := 4     
+	   2 Input      4 Bit         XORs := 4     
+	   2 Input      1 Bit         XORs := 58    
++---Registers : 
+	               32 Bit    Registers := 4     
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 33    
+	                4 Bit    Registers := 50    
+	                3 Bit    Registers := 17    
+	                2 Bit    Registers := 17    
+	                1 Bit    Registers := 219   
++---RAMs : 
+	              128 Bit	(16 X 8 bit)          RAMs := 2     
++---Muxes : 
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 9     
+	   2 Input    7 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 19    
+	   3 Input    5 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 14    
+	   2 Input    2 Bit        Muxes := 72    
+	   3 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 16    
+	   5 Input    2 Bit        Muxes := 2     
+	  11 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 122   
+	   4 Input    1 Bit        Muxes := 11    
+	   6 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO2_I_REG) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO3_I_REG) is unused and will be removed from module axi_quad_spi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:02:00 . Memory (MB): peak = 1513.715 ; gain = 749.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------+----------------------------------+-----------+----------------------+-------------+
+|Module Name      | RTL Object                       | Inference | Size (Depth x Width) | Primitives  | 
++-----------------+----------------------------------+-----------+----------------------+-------------+
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 8               | RAM32M x 2  | 
++-----------------+----------------------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:02:16 . Memory (MB): peak = 1596.957 ; gain = 832.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:02:16 . Memory (MB): peak = 1598.070 ; gain = 833.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------+----------------------------------+-----------+----------------------+-------------+
+|Module Name      | RTL Object                       | Inference | Size (Depth x Width) | Primitives  | 
++-----------------+----------------------------------+-----------+----------------------+-------------+
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 8               | RAM32M x 2  | 
++-----------------+----------------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:02:18 . Memory (MB): peak = 1627.215 ; gain = 862.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:02:30 . Memory (MB): peak = 1839.352 ; gain = 1074.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:02:30 . Memory (MB): peak = 1839.352 ; gain = 1074.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:02:30 . Memory (MB): peak = 1839.352 ; gain = 1074.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:02:30 . Memory (MB): peak = 1839.352 ; gain = 1074.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:02:30 . Memory (MB): peak = 1839.352 ; gain = 1074.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:02:30 . Memory (MB): peak = 1839.352 ; gain = 1074.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |    17|
+|2     |LUT2     |   118|
+|3     |LUT3     |    85|
+|4     |LUT4     |    86|
+|5     |LUT5     |   156|
+|6     |LUT6     |   141|
+|7     |RAM32M   |     2|
+|8     |RAM32X1D |     4|
+|9     |FD       |     8|
+|10    |FDR      |     8|
+|11    |FDRE     |   751|
+|12    |FDSE     |    38|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:02:31 . Memory (MB): peak = 1839.352 ; gain = 1074.883
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 339 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:02:25 . Memory (MB): peak = 1839.352 ; gain = 976.227
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:02:32 . Memory (MB): peak = 1839.352 ; gain = 1074.883
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1844.543 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1852.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  FD => FDRE: 8 instances
+  FDR => FDRE: 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete | Checksum: f821b33e
+INFO: [Common 17-83] Releasing license: Synthesis
+300 Infos, 164 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:03:12 . Memory (MB): peak = 1852.250 ; gain = 1292.328
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1852.250 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/esp32/esp32.runs/esp32_system_PmodOLEDrgb_0_0_synth_1/esp32_system_PmodOLEDrgb_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP esp32_system_PmodOLEDrgb_0_0, cache-ID = cabcb3033f58283b
+INFO: [Coretcl 2-1174] Renamed 120 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1852.250 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/esp32/esp32.runs/esp32_system_PmodOLEDrgb_0_0_synth_1/esp32_system_PmodOLEDrgb_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file esp32_system_PmodOLEDrgb_0_0_utilization_synth.rpt -pb esp32_system_PmodOLEDrgb_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  6 12:17:06 2026...

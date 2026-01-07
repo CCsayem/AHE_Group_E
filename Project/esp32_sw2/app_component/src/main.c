@@ -27,7 +27,7 @@
 #define SSID          "Pixel"             
 #define PASS          "12345678a"         
 #define AIO_USERNAME  "RK_Saleh"          
-#define AIO_KEY       "aio_CsPx12si8K7h1OZ5B9NjLaEOArXG" 
+#define AIO_KEY       "AIO_key" 
 #define FEED_KEY      "esp32"             
 
 // ==========================================================

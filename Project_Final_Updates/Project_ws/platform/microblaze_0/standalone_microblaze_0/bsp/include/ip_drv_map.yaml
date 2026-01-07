@@ -1,0 +1,18 @@
+PmodESP32_0:
+- PmodESP32
+- None
+PmodOLEDrgb_0:
+- PmodOLEDrgb
+- None
+axi_iic_0:
+- axi_iic
+- iic
+axi_intc_0:
+- axi_intc
+- intc
+axi_uartlite_1:
+- axi_uartlite
+- uartlite
+microblaze_0_local_memory_dlmb_bram_if_cntlr:
+- lmb_bram_if_cntlr
+- bram
