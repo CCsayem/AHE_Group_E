@@ -329,50 +329,71 @@ float get_real_temperature() {
 void UpdateOLED(float temperature) {
     u16 bgColor;
     int i;
-    char tempStr[16];
+    char tempStr[20];
     char int_buf[8], frac_buf[8];
 
-    // If > 20, turn RED
-    if (temperature > TEMP_THRESHOLD) {
-        bgColor = COLOR_RED; 
-    } else {
-        bgColor = COLOR_GREEN;
+    // Check for Error State
+    bool isError = (temperature == -999.0);
+
+    // 1. Set Background Color
+    if (isError) {
+        bgColor = COLOR_RED;   // Error = Red Alert
+    } 
+    else if (temperature > TEMP_THRESHOLD) {
+        bgColor = COLOR_RED;   // Overheat = Red
+    } 
+    else {
+        bgColor = COLOR_GREEN; // Optimal = Green
     }
 
-    // Draw Background
+    // 2. Draw Background 
     for(i = 0; i < 64; i++) {
         OLEDrgb_DrawLine(&oledDevice, 0, i, 95, i, bgColor);
     }
 
-    // Format String
-    int t_int = (int)temperature;
-    int t_frac = (int)((temperature - t_int) * 100);
-    if (t_frac < 0) t_frac = -t_frac;
-    
-    light_int_to_str(t_int, int_buf);
-    light_int_to_str(t_frac, frac_buf);
-    
-    strcpy(tempStr, int_buf);
-    strcat(tempStr, ".");
-    if(t_frac < 10) strcat(tempStr, "0");
-    strcat(tempStr, frac_buf);
-
-    // Draw Text
+    // 3. Draw Header Text 
     OLEDrgb_SetFontColor(&oledDevice, COLOR_WHITE);
     OLEDrgb_SetCursor(&oledDevice, 0, 1);
     OLEDrgb_PutString(&oledDevice, "Green House");
 
-    OLEDrgb_SetCursor(&oledDevice, 0, 3); 
-    OLEDrgb_PutString(&oledDevice, "T: ");
-    OLEDrgb_PutString(&oledDevice, tempStr);
-    OLEDrgb_PutString(&oledDevice, " C");
+    // 4. Draw Status-Specific Text
+    if (isError) {
+        // ERROR DISPLAY
+        OLEDrgb_SetCursor(&oledDevice, 0, 3); 
+        OLEDrgb_PutString(&oledDevice, "NO SENSOR"); 
 
-    OLEDrgb_SetCursor(&oledDevice, 0, 6);
-    // Display Warning Text based on local threshold
-    if (temperature > TEMP_THRESHOLD) {
-        OLEDrgb_PutString(&oledDevice, "OVER HEATED!");
-    } else {
-        OLEDrgb_PutString(&oledDevice, "Optimal Temp");
+        OLEDrgb_SetCursor(&oledDevice, 0, 6);
+        OLEDrgb_PutString(&oledDevice, "Check Conn.");
+    } 
+    else {
+        // DISPLAY
+        
+        // Format String
+        int t_int = (int)temperature;
+        int t_frac = (int)((temperature - t_int) * 100);
+        if (t_frac < 0) t_frac = -t_frac;
+        
+        light_int_to_str(t_int, int_buf);
+        light_int_to_str(t_frac, frac_buf);
+        
+        strcpy(tempStr, int_buf);
+        strcat(tempStr, ".");
+        if(t_frac < 10) strcat(tempStr, "0");
+        strcat(tempStr, frac_buf);
+
+        // Print Temp
+        OLEDrgb_SetCursor(&oledDevice, 0, 3); 
+        OLEDrgb_PutString(&oledDevice, "T: ");
+        OLEDrgb_PutString(&oledDevice, tempStr);
+        OLEDrgb_PutString(&oledDevice, " C");
+
+        // Print Status
+        OLEDrgb_SetCursor(&oledDevice, 0, 6);
+        if (temperature > TEMP_THRESHOLD) {
+            OLEDrgb_PutString(&oledDevice, "OVER HEATED!");
+        } else {
+            OLEDrgb_PutString(&oledDevice, "Optimal Temp");
+        }
     }
 }
 
@@ -412,8 +433,6 @@ int main() {
         
         if (currentTemp == -999.0) {
             xil_printf("Error reading sensor! Check connections.\r\n");
-            // Maintain previous temp or set safe default if error occurs
-            currentTemp = 0.0; 
         }
 
         // 2. Debug Print
