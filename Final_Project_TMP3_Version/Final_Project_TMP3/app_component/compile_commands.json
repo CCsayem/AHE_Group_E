@@ -1,0 +1,37 @@
+[
+{
+  "directory": "F:/Final_Project_TMP3/app_component/build",
+  "command": "D:\\Xilinx\\2025.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-gcc.exe -isystem F:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/include -isystem D:/Xilinx/2025.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include -isystem D:/Xilinx/2025.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include-fixed -isystem D:/Xilinx/2025.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include   -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -DSDT  -MMD -MP -specs=F:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/Xilinx.spec -IF:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\app_component.elf.dir\\main.c.obj -c F:\\Final_Project_TMP3\\app_component\\src\\main.c",
+  "file": "F:\\Final_Project_TMP3\\app_component\\src\\main.c"
+},
+{
+  "directory": "F:/Final_Project_TMP3/app_component/build",
+  "command": "D:\\Xilinx\\2025.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-gcc.exe -isystem F:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/include -isystem D:/Xilinx/2025.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include -isystem D:/Xilinx/2025.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include-fixed -isystem D:/Xilinx/2025.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include   -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -DSDT  -MMD -MP -specs=F:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/Xilinx.spec -IF:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\app_component.elf.dir\\PmodOLEDrgb.c.obj -c F:\\Final_Project_TMP3\\app_component\\src\\PmodOLEDrgb.c",
+  "file": "F:\\Final_Project_TMP3\\app_component\\src\\PmodOLEDrgb.c"
+},
+{
+  "directory": "F:/Final_Project_TMP3/app_component/build",
+  "command": "D:\\Xilinx\\2025.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-gcc.exe -isystem F:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/include -isystem D:/Xilinx/2025.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include -isystem D:/Xilinx/2025.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include-fixed -isystem D:/Xilinx/2025.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include   -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -DSDT  -MMD -MP -specs=F:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/Xilinx.spec -IF:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\app_component.elf.dir\\PmodOLEDrgb_selftest.c.obj -c F:\\Final_Project_TMP3\\app_component\\src\\PmodOLEDrgb_selftest.c",
+  "file": "F:\\Final_Project_TMP3\\app_component\\src\\PmodOLEDrgb_selftest.c"
+},
+{
+  "directory": "F:/Final_Project_TMP3/app_component/build",
+  "command": "D:\\Xilinx\\2025.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-gcc.exe -isystem F:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/include -isystem D:/Xilinx/2025.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include -isystem D:/Xilinx/2025.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include-fixed -isystem D:/Xilinx/2025.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include   -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -DSDT  -MMD -MP -specs=F:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/Xilinx.spec -IF:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\app_component.elf.dir\\xspi.c.obj -c F:\\Final_Project_TMP3\\app_component\\src\\xspi.c",
+  "file": "F:\\Final_Project_TMP3\\app_component\\src\\xspi.c"
+},
+{
+  "directory": "F:/Final_Project_TMP3/app_component/build",
+  "command": "D:\\Xilinx\\2025.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-gcc.exe -isystem F:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/include -isystem D:/Xilinx/2025.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include -isystem D:/Xilinx/2025.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include-fixed -isystem D:/Xilinx/2025.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include   -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -DSDT  -MMD -MP -specs=F:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/Xilinx.spec -IF:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\app_component.elf.dir\\xspi_options.c.obj -c F:\\Final_Project_TMP3\\app_component\\src\\xspi_options.c",
+  "file": "F:\\Final_Project_TMP3\\app_component\\src\\xspi_options.c"
+},
+{
+  "directory": "F:/Final_Project_TMP3/app_component/build",
+  "command": "D:\\Xilinx\\2025.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-gcc.exe -isystem F:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/include -isystem D:/Xilinx/2025.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include -isystem D:/Xilinx/2025.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include-fixed -isystem D:/Xilinx/2025.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include   -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -DSDT  -MMD -MP -specs=F:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/Xilinx.spec -IF:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\app_component.elf.dir\\xspi_selftest.c.obj -c F:\\Final_Project_TMP3\\app_component\\src\\xspi_selftest.c",
+  "file": "F:\\Final_Project_TMP3\\app_component\\src\\xspi_selftest.c"
+},
+{
+  "directory": "F:/Final_Project_TMP3/app_component/build",
+  "command": "D:\\Xilinx\\2025.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-gcc.exe -isystem F:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/include -isystem D:/Xilinx/2025.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include -isystem D:/Xilinx/2025.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.3.0/include-fixed -isystem D:/Xilinx/2025.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include   -mlittle-endian -mxl-soft-mul -mcpu=v11.0 -DSDT  -MMD -MP -specs=F:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/Xilinx.spec -IF:/Final_Project_TMP3/platform/export/platform/sw/standalone_microblaze_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\app_component.elf.dir\\xspi_stats.c.obj -c F:\\Final_Project_TMP3\\app_component\\src\\xspi_stats.c",
+  "file": "F:\\Final_Project_TMP3\\app_component\\src\\xspi_stats.c"
+}
+]

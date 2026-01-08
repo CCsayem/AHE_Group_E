@@ -1,0 +1,255 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Wed Jan  7 15:23:36 2026
+| Host         : RUHUL running 64-bit major release  (build 9200)
+| Command      : report_methodology -file esp32_system_wrapper_methodology_drc_routed.rpt -pb esp32_system_wrapper_methodology_drc_routed.pb -rpx esp32_system_wrapper_methodology_drc_routed.rpx
+| Design       : esp32_system_wrapper
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 43
++-----------+------------------+------------------------------------------------------------------+--------+
+| Rule      | Severity         | Description                                                      | Checks |
++-----------+------------------+------------------------------------------------------------------+--------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks                   | 2      |
+| LUTAR-1   | Warning          | LUT drives async reset alert                                     | 1      |
+| PDRC-190  | Warning          | Suboptimally placed synchronized register chain                  | 1      |
+| TIMING-9  | Warning          | Unknown CDC Logic                                                | 1      |
+| TIMING-18 | Warning          | Missing input or output delay                                    | 36     |
+| TIMING-56 | Warning          | Missing logically or physically excluded clock groups constraint | 2      |
++-----------+------------------+------------------------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_out1_esp32_system_clk_wiz_1_0 and clk_out1_esp32_system_clk_wiz_1_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_esp32_system_clk_wiz_1_0] -to [get_clocks clk_out1_esp32_system_clk_wiz_1_0_1]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_out1_esp32_system_clk_wiz_1_0_1 and clk_out1_esp32_system_clk_wiz_1_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_esp32_system_clk_wiz_1_0_1] -to [get_clocks clk_out1_esp32_system_clk_wiz_1_0]
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell esp32_system_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) esp32_system_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell esp32_system_i/PmodOLEDrgb_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1/syncstages_ff_reg[1] in site SLICE_X33Y141 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell esp32_system_i/PmodOLEDrgb_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1_CDC_1 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on jb_oled_pin10_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on jb_oled_pin2_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on jb_oled_pin3_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on jb_oled_pin4_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on jb_oled_pin7_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on jb_oled_pin8_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on jb_oled_pin9_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on jc_esp32_pin10_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on jc_esp32_pin1_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on jc_esp32_pin3_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on jc_esp32_pin4_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on jc_esp32_pin7_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on jc_esp32_pin8_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on jc_esp32_pin9_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An input delay is missing on reset relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An input delay is missing on tmp3_scl_tri_io[0] relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An input delay is missing on tmp3_sda_tri_io[0] relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An input delay is missing on usb_uart_rxd relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on jb_oled_pin10_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on jb_oled_pin1_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on jb_oled_pin2_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on jb_oled_pin3_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on jb_oled_pin4_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on jb_oled_pin7_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on jb_oled_pin8_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on jb_oled_pin9_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on jc_esp32_pin10_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on jc_esp32_pin1_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on jc_esp32_pin2_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on jc_esp32_pin4_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on jc_esp32_pin7_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An output delay is missing on jc_esp32_pin8_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on jc_esp32_pin9_io relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on tmp3_scl_tri_io[0] relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on tmp3_sda_tri_io[0] relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An output delay is missing on usb_uart_txd relative to the rising and/or falling clock edge(s) of clk_in1_0, sys_clk_pin.
+Related violations: <none>
+
+TIMING-56#1 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin esp32_system_i/clk_wiz_1/inst/mmcm_adv_inst/CLKFBOUT but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: clkfbout_esp32_system_clk_wiz_1_0, clkfbout_esp32_system_clk_wiz_1_0_1
+Related violations: <none>
+
+TIMING-56#2 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin esp32_system_i/clk_wiz_1/inst/mmcm_adv_inst/CLKOUT0 but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: clk_out1_esp32_system_clk_wiz_1_0, clk_out1_esp32_system_clk_wiz_1_0_1
+Related violations: <none>
+
+
