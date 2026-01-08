@@ -1,7 +1,7 @@
 # IoT-Based Temperature Monitoring System for Greenhouses
 
 ## Project Description
-This project utilizes the **Artix-7 FPGA (Digilent Nexys A7-100T)** to create a real-time temperature monitoring system. It integrates a **MicroBlaze** soft-core processor with a **Pmod ESP32** for wireless cloud telemetry and a **Pmod OLED RGB** for local visual feedback.
+This project utilizes the **Artix-7 FPGA (Digilent Nexys A7-100T)** to create a real-time temperature monitoring system. It integrates a **MicroBlaze** soft-core processor with a **Pmod TMP3** sensor for data acquisition, a **Pmod ESP32** for wireless cloud telemetry, and a **Pmod OLED RGB** for local visual feedback.
 
 ## Project Versions
 We developed two distinct versions of this system:
